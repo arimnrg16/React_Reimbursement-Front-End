@@ -28,6 +28,8 @@ import EditmedicalScreen from '../screens/editmedical'
 import EditovertimeScreen from '../screens/editovertime'
 import EditquickleaveScreen from '../screens/editquickleave'
 
+import EditquickleavesScreen from '../screens/editquickleave'
+
 
 
 
@@ -37,18 +39,18 @@ import profileScreen from '../screens/profile'
 
 const HeaderStyle = () => ({
   headerStyle: {
-    backgroundColor: '#F7CA18',
+    backgroundColor: '#0000ff',
     textAlign: 'center',
     fontWeight: 'normal'
   },
-  headerTintColor: '#deffffff',
+  headerTintColor: '#000000',
 })
 
 const MainTab = createMaterialTopTabNavigator({
   MainTab: {
     screen: mainScreen,
     navigationOptions: (props) => ({
-      title: "Request Reimbursement",
+      title: "",
     })
   }
 
@@ -176,6 +178,14 @@ EditquickleaveScreen: {
     title: "Editquickleave",
   })
 },
+
+EditquickleavesScreen: {
+  screen: EditquickleavesScreen,
+  navigationOptions: (props) => ({
+    title: "Editquickleave",
+  })
+},
+
 EditovertimeScreen: {
   screen: EditovertimeScreen,
   navigationOptions: (props) => ({

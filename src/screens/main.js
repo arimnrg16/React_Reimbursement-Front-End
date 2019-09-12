@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base'
+import {StyleSheet } from 'react-native';
+const styles = StyleSheet.create({
+
+
+
+  text: {
+    fontSize: 20,
+  },
+})
+
 export default class main extends Component {
   render() {
     return (
@@ -14,7 +24,7 @@ export default class main extends Component {
                 <Left>
                   <Thumbnail source={require("../assets/images/OT.png")} />
                   <Body >
-                    <Text >Overtime</Text>
+                    <Text style={[styles.text, { color: '#000000' }] }>Overtime</Text>
                   </Body>
                 </Left>
               </CardItem>
@@ -25,7 +35,7 @@ export default class main extends Component {
                 <Left>
                   <Thumbnail source={require("../assets/images/M.png")} />
                   <Body>
-                    <Text>Medical</Text>
+                    <Text style={[styles.text, { color: '#000000' }] }>Medical</Text>
                   </Body>
                 </Left>
               </CardItem>
@@ -36,7 +46,7 @@ export default class main extends Component {
                 <Left>
                   <Thumbnail source={require("../assets/images/BT.png")} />
                   <Body>
-                    <Text>Business Trip</Text>
+                    <Text style={[styles.text, { color: '#000000' }] }>Business Trip</Text>
                   </Body>
                 </Left>
               </CardItem>
@@ -47,7 +57,7 @@ export default class main extends Component {
                 <Left>
                   <Thumbnail source={require("../assets/images/QL.png")} />
                   <Body>
-                    <Text>Quick Leave</Text>
+                    <Text style={[styles.text, { color: '#000000' }] }>Quick Leave</Text>
                   </Body>
                 </Left>
               </CardItem>
