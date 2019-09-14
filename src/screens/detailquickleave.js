@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   Title: {
-    fontSize: 18,
-    marginTop: 15,
+    fontSize: 25,
+    marginTop: 20,
     fontFamily: "Lato-Black",
     color: '#000000'
   },
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   text: {
-    fontSize: 18,
+    fontSize: 20,
   },
 })
 
@@ -40,11 +40,8 @@ export default class detailquickleave extends Component {
     return (
       <ScrollView>
 
-        <View style={{ paddingTop: 20, paddingLeft: 20, paddingRight: 50 }}>
-          <View style={styles.container}>
-
-            <Text style={[styles.Titl, { color: '#000000' }]}>     Request Quick Leave</Text>
-          </View>
+        <View style={{ paddingTop: 30, paddingLeft: 40, paddingRight: 40 }}>
+          
           <Text style={styles.Title}>Date Now :</Text>
           <Text style={[styles.text, { color: '#008000' }]}>{this.data.date}</Text>
           <Text style={styles.Title}>Start Time :</Text>

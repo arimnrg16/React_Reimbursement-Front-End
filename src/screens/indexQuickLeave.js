@@ -54,7 +54,7 @@ export default class indexQuickLeave extends Component {
             <Left>
               <Thumbnail source={require("../assets/images/button.png")} />
               <Body>
-                <Text  style={[styles.text, { color: '#008000' }] }>Request Empat</Text>
+                <Text  style={[styles.text, { color: '#008000' }] }>Request Quick Leave</Text>
               </Body>
             </Left>
           </CardItem>
@@ -82,12 +82,12 @@ export default class indexQuickLeave extends Component {
                   <Text style={[styles.text, { color: '#008000' }] }>{item.projectName}</Text>
                 </View>
                 <TouchableOpacity style={{ marginHorizontal: 10 }} onPress={() => {
-                  this.props.navigation.navigate("DetailquickleaveScreen", {
+                  this.props.navigation.navigate("EditquickleaveScreen", {
                     data: this.state.data[index]
                   })
                 }}>
                   <View style={{ padding: 5, justifyContent: "center", alignItems: "center", width: 30, height: 30, borderRadius: 15 }}>
-                    <Image style={{ width: 20, height: 20, tintColor: "#000000" }} source={require("../assets/images/next.png")} />
+                    <Image style={{ width: 20, height: 20, tintColor: "#000000" }} source={require("../assets/images/edit.png")} />
                   </View>
                 </TouchableOpacity>
 

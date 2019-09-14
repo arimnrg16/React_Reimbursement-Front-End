@@ -67,28 +67,28 @@ export default Main = createStackNavigator({
   DetailbusinesstripScreen: {
     screen: datailbusinesstripScreen,
     navigationOptions: (props) => ({
-      title: "Detailbusinesstrip",
+      title: "Details Request Business Trip",
     })
   },
 
   DetailmedicalScreen: {
     screen: detailmedicalScreen,
     navigationOptions: (props) => ({
-      title: "Detailmedical",
+      title: "Details Request Medical",
     })
   },
 
   DetailovertimeScreen: {
     screen: detailovertimeScreen,
     navigationOptions: (props) => ({
-      title: "Detailovertime",
+      title: "Details Request Overtime",
     })
   },
 
   DetailquickleaveScreen: {
     screen: detailquickleaveScreen,
     navigationOptions: (props) => ({
-      title: "Detailquickleave",
+      title: "Details Request Quick Leave",
     })
   },
 
@@ -96,7 +96,7 @@ export default Main = createStackNavigator({
   IndexOvertimeScreen: {
     screen: indexOvertimeScreen,
     navigationOptions: (props) => ({
-      title: "IndexOvertime",
+      title: "Overtime",
     })
   },
 
@@ -105,33 +105,33 @@ export default Main = createStackNavigator({
   IndexMedicalScreen: {
     screen: indexMedicalScreen,
     navigationOptions: (props) => ({
-      title: "IndexMedical",
+      title: "Medical",
     })
   },
   IndexBusinessTripScreen: {
     screen: indexBusinessTripScreen,
     navigationOptions: (props) => ({
-      title: "IndexBusinessTrip",
+      title: "Business Trip",
     })
   },
   IndexQuickLeaveScreen: {
     screen: indexQuickLeaveScreen,
     navigationOptions: (props) => ({
-      title: "IndexQuickLeave",
+      title: "Quick Leave",
     })
   },
 
   RequestQuickLeaveScreen: {
     screen: RequestQuickLeaveScreen,
     navigationOptions: (props) => ({
-      title: "RequestQuickLeave",
+      title: "Request Quick Leave",
     })
   },
 
   RequestMedicalScreen: {
     screen: RequestMedicalScreen,
     navigationOptions: (props) => ({
-      title: "RequestMedical",
+      title: "Request Medical",
     })
   },
 
@@ -139,14 +139,14 @@ export default Main = createStackNavigator({
   RequestOvertimeScreen: {
     screen: RequestOvertimeScreen,
     navigationOptions: (props) => ({
-      title: "RequestOvertime",
+      title: "Request Overtime",
     })
   },
 
   RequestBusinessTripScreen: {
     screen: RequestBusinessTripScreen,
     navigationOptions: (props) => ({
-      title: "RequestBusinessTrip",
+      title: "Request Business Trip",
     })
   },
 
@@ -163,33 +163,33 @@ export default Main = createStackNavigator({
 EditbusinesstripScreen: {
   screen: EditbusinesstripScreen,
   navigationOptions: (props) => ({
-    title: "Editbusinesstrip",
+    title: "Edit Business Trip",
   })
 },
 EditmedicalScreen: {
   screen: EditmedicalScreen,
   navigationOptions: (props) => ({
-    title: "Editmedical",
+    title: "Edit Medical",
   })
 },
 EditquickleaveScreen: {
   screen: EditquickleaveScreen,
   navigationOptions: (props) => ({
-    title: "Editquickleave",
+    title: "Edit Quick Leave",
   })
 },
 
 EditquickleavesScreen: {
   screen: EditquickleavesScreen,
   navigationOptions: (props) => ({
-    title: "Editquickleave",
+    title: "Edit Quick Leave",
   })
 },
 
 EditovertimeScreen: {
   screen: EditovertimeScreen,
   navigationOptions: (props) => ({
-    title: "Editovertime",
+    title: "Edit Over Time",
   })
 }
 

@@ -4,13 +4,24 @@ import Resource from '../network/Resource'
 
 const myStyle = StyleSheet.create({
   form: {
-    borderColor: "#000000",
-    backgroundColor: "#FEFEFE",
+    borderColor: "#d9d9d9",
+    backgroundColor: "#FFFFFF",
     borderWidth: 1,
-    height: 50,
-    paddingVertical: 3,
+    height: 45,
+    paddingVertical: 5,
     paddingHorizontal: 10,
-    marginBottom: 10
+    marginBottom: 10,
+    marginTop: 10,
+    borderRadius: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 0.1,
+
+    elevation: 0,
   },
   Title: {
     fontSize: 17,
@@ -83,7 +94,7 @@ export default class RequestQuickLeave extends Component {
 
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={{ marginBottom: 100, backgroundColor: "#fafafa"}}>
       <View style={{ padding: 30 }}>
         <Text style={myStyle.Title}>Date Now</Text>
         <TextInput
@@ -158,8 +169,8 @@ export default class RequestQuickLeave extends Component {
 
 
         <TouchableOpacity style={{ marginTop: 20 }} onPress={() => this.submitTask()}>
-          <View style={{ backgroundColor: "#F7CA18", padding: 15,height: 50, }}>
-            <Text style={{ color: "#FFF", textAlign: "center" }}>SUBMIT</Text>
+          <View style={{ backgroundColor: "#cfcfcf", padding: 15,height: 50, }}>
+            <Text style={{ fontWeight: 'bold', fontSize: 18, textAlign: "center" }}>SUBMIT</Text>
           </View>
         </TouchableOpacity>
       </View>
