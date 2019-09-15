@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, TouchableOpacity, FlatList, Text, View, Image, Alert } from 'react-native';
-import { Icon, Right } from 'native-base'
-import { Button } from 'react-native-elements'
+import { Icon, Right, Button, Card, CardItem, Left, Body, Thumbnail } from 'native-base'
+// import { Button } from 'react-native-elements'
 import Resource from '../network/Resource'
 
+const styles = StyleSheet.create({
+
+
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  text: {
+    fontSize: 20,
+  },
+  Title: {
+    fontSize: 18,
+    fontFamily: "Lato-Black",
+    color: '#000000'
+  },
+})
 
 export default class indexMedical extends Component {
   constructor(props) {
@@ -30,14 +46,27 @@ export default class indexMedical extends Component {
         alert(err)
       })
   }
+
+
   render() {
     return (
       <View>
-        <Button onPress={() => this.props.navigation.navigate("RequestMedicalScreen")} raised icon={{ name: 'code' }} title='Request Dua' />
+        <Card style={{ borderRadius: 20, backgroundColor: "#228b22" }}>
+          <CardItem bordered button onPress={() => this.props.navigation.navigate("RequestMedicalScreen")} style={{ height: 70 }}>
+            <Left>
+              <Thumbnail source={require("../assets/images/button.png")} />
+              <Body>
+                <Text style={[styles.text, { color: '#008000' }]}>Request Medical</Text>
+              </Body>
+            </Left>
+          </CardItem>
+        </Card>
+
         <FlatList
           refreshing={this.state.loading}
           onRefresh={() => this.getData()}
           style={{}}
+
 
           data={this.state.data}
           renderItem={({ item, index }) => (
@@ -48,19 +77,19 @@ export default class indexMedical extends Component {
                 })
             }}>
 
-              <View style={{ marginBottom: 20, padding: 20, borderBottomColor: "#aaa", borderBottomWidth: 1, flexDirection: "row" }}>
+              <View style={{ marginBottom: 20, padding: 20, borderBottomColor: "#000000", borderBottomWidth: 1, flexDirection: "row" }}>
                 <View style={{ flex: 1 }}>
-                  <Text>{item.dateRequestMedical}</Text>
-                  <Text>{item.medicationType}</Text>
-                  <Text>{item.totalCostNominal }</Text>
+
+                  <Text style={styles.Title}>Monday, 22 Agustus 2019</Text>
+                  <Text style={[styles.text, { color: '#008000' }]}>{item.projectName}</Text>
                 </View>
                 <TouchableOpacity style={{ marginHorizontal: 10 }} onPress={() => {
                   this.props.navigation.navigate("EditmedicalScreen", {
                     data: this.state.data[index]
                   })
                 }}>
-                  <View style={{ backgroundColor: "#2ecc71", padding: 5, justifyContent: "center", alignItems: "center", width: 30, height: 30, borderRadius: 15 }}>
-                    <Image style={{ width: 13, height: 13, tintColor: "#FFF" }} source={require("../assets/images/edit.png")} />
+                  <View style={{ padding: 5, justifyContent: "center", alignItems: "center", width: 30, height: 30, borderRadius: 15 }}>
+                    <Image style={{ width: 20, height: 20, tintColor: "#000000" }} source={require("../assets/images/edit.png")} />
                   </View>
                 </TouchableOpacity>
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Button, ScrollView, StyleSheet } from 'react-native'
+import { Text, View, Button, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
 
@@ -59,7 +59,9 @@ export default class detailovertime extends Component {
           <Text style={[styles.text, { color: '#008000' }]}>{this.data.transportReimbursement}</Text>
           <Text style={styles.Title}>MealReimbursement: </Text>
           <Text style={[styles.text, { color: '#008000' }]}>{this.data.mealReimbursement}</Text>
-          <Text>ProofAttcahment: {this.data.proofAttcahment}</Text>
+          <Text style={styles.Title}>ProofAttachment: </Text>
+          <Text style={[styles.text, { color: '#008000' }]}>{this.data.proofAttcahment}</Text>
+
         </View>
 
         <View style={styles.multiButtonContainer}>
